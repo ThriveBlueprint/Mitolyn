@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Always Tired? Uncover the Mitochondrial Solution for Lasting Energy - Mitolyn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        body, h1, h2, p, a, img {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .header-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #2c3e50;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .header-subtitle {
+            font-size: 1.1em;
+            color: #7f8c8d;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #E74C3C; /* Stronger Red/Orange for urgency */
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+		margin-top:40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #C0392B; /* Darker red on hover */
+            transform: translateY(-2px);
+        }
+
+        .cta-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://thriveblueprint.wordpress.com/wp-content/uploads/2025/06/ephraim-mayrena-zs8jbdbbzk0-unsplash.webp') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8em;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            max-width: 750px;
+            margin: 0 auto 30px auto;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        /* Problem Section (Enhanced) */
+        .problem-section {
+            background: #fff;
+            padding: 50px 40px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-left: 6px solid #E74C3C; /* Emphasize problem with a strong border */
+        }
+
+        .problem-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #E74C3C; /* Red for emphasis */
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .problem-section p {
+            font-size: 1.15em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #444;
+        }
+
+        .problem-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .problem-section ul li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .problem-section ul li:before {
+            content: '❌'; /* X mark for problem points */
+            position: absolute;
+            left: 0;
+            color: #E74C3C;
+            font-size: 1.3em;
+            top: 0;
+        }
+
+
+        /* Content Sections */
+        .section {
+            background: #fff;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .section ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .section ul li:before {
+            content: '✔️';
+            position: absolute;
+            left: 0;
+            color: #27ae60; /* Green */
+            font-size: 1.2em;
+            top: 0;
+        }
+
+        .image-collage {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .image-collage img {
+            width: 100%;
+            max-width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-collage img:hover {
+            transform: scale(1.03);
+        }
+
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin: 40px auto;
+            font-size: 1.2em;
+            color: #555;
+            max-width: 700px;
+            position: relative;
+            padding: 20px;
+            background: #f0f8ff; /* Light blue */
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+        }
+        .quote::before {
+            content: '“';
+            font-size: 3em;
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            color: #3498db;
+            opacity: 0.2;
+        }
+        .quote cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .scientific-citation {
+            font-size: 0.9em;
+            color: #666;
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.8em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .problem-section h2, .section h2 {
+                font-size: 2em;
+            }
+            .problem-section p, .problem-section ul li, .section p, .section ul li, .cta-button {
+                font-size: 1em;
+            }
+            .image-collage img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-logo {
+                font-size: 2em;
+            }
+            .hero {
+                padding: 60px 15px;
+            }
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            .problem-section, .section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Still Feeling Exhausted When the Day Has Just Begun?</h1>
+            <p>That persistent fatigue, brain fog, difficulty sleeping, and struggle to manage your weight aren't normal. It's a signal your body is sending. Discover the surprising root cause and how to reclaim your vibrant energy.</p>
+        </section>
+
+        <section class="problem-section">
+            <h2>The Unseen Battle: Why Are You So Drained?</h2>
+            <p>You wake up, maybe you even get enough sleep, but the **fatigue still hits you like a brick wall.** The coffee helps for an hour, then you crash. You struggle to focus, your memory feels hazy, and losing weight seems impossible, no matter what you try.</p>
+            <p>Does this sound familiar?</p>
+            <ul>
+                <li>You constantly feel **run down**, even after a full night's rest.</li>
+                <li>You rely on caffeine or energy drinks just to **get through the day**.</li>
+                <li>Your mind feels **foggy**, making it hard to concentrate or remember things.</li>
+                <li>You lack the **motivation** to exercise or do activities you once loved.</li>
+                <li>Your **weight seems stuck**, despite your best efforts to eat well.</li>
+                <li>You experience **poor sleep quality** or restless nights.</li>
+                <li>Your **attention span** feels shorter, impacting your productivity.</li>
+            </ul>
+            <p>This isn't just "getting older" or "being busy." This isn't just in your head. This pervasive exhaustion is your body crying out for help, and the answer lies deep within your cells.</p>
+        </section>
+
+        <section class="section">
+            <h2>Mitochondria: Your Body's Tiny Powerhouses, Your Energy Secret</h2>
+            <p>Imagine every single cell in your body has its own miniature power plant. These are your **mitochondria**. They're microscopic organelles responsible for converting the food you eat and the air you breathe into the raw energy (ATP) your body needs for literally **everything**: thinking, moving, digesting, even repairing itself and sleeping soundly.</p>
+            <div class="image-collage">
+                <img src="https://images.unsplash.com/photo-1706639449756-9ffea3f420a7?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cells and energy production mitolyn">
+                <img src="https://images.unsplash.com/photo-1647083701139-3930542304cf?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mitochondria magnified mitolyn">
+                <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Metabolic health and vitality mitolyn">
+		<img src="https://thriveblueprint.wordpress.com/wp-content/uploads/2025/06/448a8f7e-36a9-4037-90c3-e155e8455157.webp" alt="Mitolyn">
+
+            </div>
+            <p>When your mitochondria are healthy and abundant, they churn out energy efficiently, and you feel vibrant, sharp, and resilient. But what happens when these "factories" are struggling?</p>
+            <div class="quote">
+                "Mitochondrial dysfunction is implicated in a wide range of pathological conditions, from aging and neurodegenerative diseases to obesity and diabetes."
+                <cite>– Dr. Bruce Ames, Biochemist</cite>
+            </div>
+            <p class="scientific-citation">Extensive scientific research confirms that **mitochondrial damage or dysfunction** can be a core underlying cause of chronic fatigue, brain fog, metabolic sluggishness, and difficulty with weight management [Wallace, 2005; Picard et al., 2016]. Factors like chronic stress, environmental toxins, poor diet, lack of sleep, and the natural aging process can compromise their function, severely diminishing your energy production and overall well-being.</p>
+        </section>
+
+        <section class="section">
+            <h2>Reignite Your Inner Spark: How Supporting Mitochondria Transforms Your Life</h2>
+            <p>The good news? Your body is incredibly intelligent and capable of healing. By providing your mitochondria with the right support, you can help them repair and regenerate, leading to a cascade of benefits:</p>
+            <ul>
+                <li>**Lasting Energy All Day:** Healthy mitochondria produce consistent energy, eliminating those afternoon crashes and the need for constant stimulants.</li>
+                <li>**Stabilized Weight & Optimized Metabolism:** When your "energy engines" are efficient, your body burns fat more effectively, manages blood sugar better, and supports a healthy, stable weight.</li>
+                <li>**Sharper Mind & Better Focus:** Your brain is a massive energy consumer. Robust mitochondria mean improved concentration, memory, and sustained mental clarity.</li>
+                <li>**Deeper, Restorative Sleep:** A well-functioning body with balanced energy cycles naturally leads to more restful sleep, helping you wake up truly refreshed.</li>
+                <li>**Enhanced Overall Well-being:** At a cellular level, a body with thriving mitochondria is more resilient, less prone to inflammation, and recovers faster.</li>
+            </ul>
+            <p class="scientific-citation">Emerging science indicates that specific nutrients and compounds can significantly enhance mitochondrial health, boosting vitality, physical endurance, and metabolic balance [Lopez-Lluch et al., 2017; Pall, 2007]. This isn't a quick fix; it's a scientifically grounded approach to empowering your body's natural processes.</p>
+        </section>
+
+        <div class="cta-container">
+            <h2>Ready to End the Cycle of Exhaustion and Live with Abundant Energy?</h2>
+            <p>If the thought of reactivating your body's own energy powerhouses resonates with you, and you're ready to explore a science-backed solution that addresses the root cause of your fatigue, weight struggles, and lack of focus, it's time to take the next step.</p>
+            <a href="https://mitolyn.com/welcome/?hop=davidfont&hopId=1b6e63c0-a4dd-4192-8506-9b5fd5e3065c" class="cta-button">Discover Your Path to More Energy Now!</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MitoRevive. All Rights Reserved.</p>
+            <p>This page is for informational and awareness purposes. For full product details and purchase, please click the button above.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
